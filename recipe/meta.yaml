@@ -1,5 +1,5 @@
 {% set name = "pyjs_code_runner" %}
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/emscripten-forge/pyjs-code-runner/archive/{{ version }}.tar.gz
-  sha256: 0c9a6cc462ee2ee28d7944bdd8a6954ff187bd243b7ac048ef4e29f6bcdc3bd7
+  sha256: 7ef32ae89d48991e5fd2877ceeccccf766b68d5048b9e746e4b58a37ad6fb41a
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python
-    - empack >=2.0
+    - empack >=3.0
     - rich
     - typer
     - appdirs
