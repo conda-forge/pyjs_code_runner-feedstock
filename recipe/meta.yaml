@@ -1,5 +1,5 @@
 {% set name = "pyjs_code_runner" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/emscripten-forge/pyjs-code-runner/archive/{{ version }}.tar.gz
-  sha256: 7ef32ae89d48991e5fd2877ceeccccf766b68d5048b9e746e4b58a37ad6fb41a
+  sha256: 0f6c9ad2e26e4c8a2bce8e7ac662ed309de41e1cc7e7bc0d56587764d983686e
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
 requirements:
@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/emscripten-forge/pyjs-code-runner
-  summary: 'A tool to run emscripten-forge compiled python-wasm code from the terminal'
+  summary: A tool to run emscripten-forge compiled python-wasm code from the terminal
   description: |
     A tool to run emscripten-forge compiled python-wasm code from the terminal
   license: MIT
