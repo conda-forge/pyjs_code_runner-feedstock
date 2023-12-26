@@ -16,7 +16,7 @@ build:
 
 requirements:
   build:
-    - python >=3.8                        # [build_platform != target_platform]
+    - python                              # [build_platform != target_platform]
     - pip                                 # [build_platform != target_platform]
   host:
     - python
