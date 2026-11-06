@@ -1,5 +1,5 @@
 {% set name = "pyjs_code_runner" %}
-{% set version = "3.2.0" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/emscripten-forge/pyjs-code-runner/archive/{{ version }}.tar.gz
-  sha256: 631956c6d6548fd0708b336bd71a6a1181f7bc13b3b57e51d16bb01e056d10de
+  sha256: 895d81ceefa3bae61a9fcb33f38b8e9f88b415ac1ee8f21935ee75eb86a19e16
 
 build:
   number: 0
